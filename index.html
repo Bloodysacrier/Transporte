@@ -1,45 +1,48 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="es"><head>
+<html class="scroll-smooth" lang="es">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>K&amp;J Logistics | Soluciones de Carga Pesada</title>
+<title>K&J Logistics | Soluciones de Carga Pesada</title>
+
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Oswald:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+
 <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#BE1E2D", // Deep Red from logo
-              "background-light": "#F8FAFC",
-              "background-dark": "#0F172A",
-              "charcoal": "#1E293B",
-            },
-            fontFamily: {
-              display: ["Oswald", "sans-serif"],
-              sans: ["Inter", "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "4px",
-            },
-          },
-        },
-      };
-    </script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#BE1E2D",
+        "background-light": "#F8FAFC",
+        "background-dark": "#0F172A",
+        charcoal: "#1E293B",
+      },
+      fontFamily: {
+        display: ["Oswald", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+      },
+    },
+  },
+};
+</script>
+
 <style>
-        .hero-gradient {
-            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
-        }
-        .text-shadow {
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-    </style>
+.hero-gradient {
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+</style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans antialiased">
+
 <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between h-20 items-center">
@@ -165,10 +168,9 @@
     <!-- GRID -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-      <!-- CARD -->
       <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden">
-          <img src="images/IngresoAIFA.jpg" class="w-full h-full object-cover" alt="">
+        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
+          <img src="images/IngresoAIFA.jpg" data-gallery class="w-full h-full object-cover" alt="">
         </div>
         <div class="p-3 text-center">
           <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -178,8 +180,8 @@
       </div>
 
       <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden">
-          <img src="images/Transporteespecializado.jpg" class="w-full h-full object-cover" alt="">
+        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
+          <img src="images/Transporteespecializado.jpg" data-gallery class="w-full h-full object-cover" alt="">
         </div>
         <div class="p-3 text-center">
           <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -189,8 +191,8 @@
       </div>
 
       <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden">
-          <img src="images/fletesloc.jpg" class="w-full h-full object-cover" alt="">
+        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
+          <img src="images/fletesloc.jpg" data-gallery class="w-full h-full object-cover" alt="">
         </div>
         <div class="p-3 text-center">
           <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -200,8 +202,8 @@
       </div>
 
       <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden">
-          <img src="images/MANIOBRA_1.jpg" class="w-full h-full object-cover" alt="">
+        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
+          <img src="images/MANIOBRA_1.jpg" data-gallery class="w-full h-full object-cover" alt="">
         </div>
         <div class="p-3 text-center">
           <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -211,8 +213,8 @@
       </div>
 
       <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden">
-          <img src="images/EMBALAJE.jpg" class="w-full h-full object-cover" alt="">
+        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
+          <img src="images/EMBALAJE.jpg" data-gallery class="w-full h-full object-cover" alt="">
         </div>
         <div class="p-3 text-center">
           <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -222,8 +224,8 @@
       </div>
 
       <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden">
-          <img src="images/CUSTODIA.jpg" class="w-full h-full object-cover" alt="">
+        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
+          <img src="images/CUSTODIA.jpg" data-gallery class="w-full h-full object-cover" alt="">
         </div>
         <div class="p-3 text-center">
           <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -233,8 +235,8 @@
       </div>
 
       <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden">
-          <img src="images/almacenamiento.jpg" class="w-full h-full object-cover" alt="">
+        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
+          <img src="images/almacenamiento.jpg" data-gallery class="w-full h-full object-cover" alt="">
         </div>
         <div class="p-3 text-center">
           <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
@@ -247,42 +249,40 @@
   </div>
 </section>
 
+
 <section class="py-24 dark:bg-background-dark" id="galeria">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-<div>
-<h2 class="text-primary font-bold uppercase tracking-widest mb-2">Flota e Infraestructura</h2>
-<h3 class="text-3xl md:text-5xl font-display font-bold uppercase text-slate-900 dark:text-white">Nuestras Operaciones</h3>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden h-64 md:h-auto">
-<img alt="Warehouse logistics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="images/GAL1.jpg"/>
-<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-icons text-white text-4xl">fullscreen</span>
-</div>
-</div>
-<div class="relative group overflow-hidden h-64">
-<img alt="Semi truck highway" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="images/GAL2.jpg"/>
-<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-icons text-white text-4xl">fullscreen</span>
-</div>
-</div>
-<div class="relative group overflow-hidden h-64">
-<img alt="Container port" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="images/GAL3.jpg"/>
-<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-icons text-white text-4xl">fullscreen</span>
-</div>
-</div>
-<div class="md:col-span-2 relative group overflow-hidden h-64">
-<img alt="Loading dock" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="images/GAL4.jpg"/>
-<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-<span class="material-icons text-white text-4xl">fullscreen</span>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+      <div>
+        <h2 class="text-primary font-bold uppercase tracking-widest mb-2">
+          Flota e Infraestructura
+        </h2>
+        <h3 class="text-3xl md:text-5xl font-display font-bold uppercase text-slate-900 dark:text-white">
+          Nuestras Operaciones
+        </h3>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden h-64 md:h-auto cursor-pointer">
+        <img src="images/GAL1.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      </div>
+
+      <div class="relative group overflow-hidden h-64 cursor-pointer">
+        <img src="images/GAL2.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      </div>
+
+      <div class="relative group overflow-hidden h-64 cursor-pointer">
+        <img src="images/GAL3.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      </div>
+
+      <div class="md:col-span-2 relative group overflow-hidden h-64 cursor-pointer">
+        <img src="images/GAL4.jpg" data-gallery class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"/>
+      </div>
+    </div>
+  </div>
 </section>
+
 <section class="py-24 bg-slate-100 dark:bg-charcoal/50" id="contacto">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid lg:grid-cols-2 gap-16">
@@ -317,11 +317,18 @@
 </div>
 <div class="ml-4">
 <h4 class="font-bold text-slate-900 dark:text-white">Correo Electrónico</h4>
-<p class="text-slate-600 dark:text-slate-400">logistica@transporteskyj.com</p>
+<p class="text-slate-600 dark:text-slate-400">
+  <a href="mailto:logistica@transporteskyj.com"
+     class="hover:underline hover:text-blue-600 dark:hover:text-blue-400">
+    logistica@transporteskyj.com
+  </a>
+</p>
+
 </div>
 </div>
 </div>
 </div>
+
 <div class="bg-white dark:bg-background-dark p-8 md:p-10 shadow-xl border border-slate-200 dark:border-slate-800">
 <h4 class="text-2xl font-display font-bold mb-6 uppercase text-slate-900 dark:text-white">Solicitar Cotización</h4>
 <form class="space-y-6">
@@ -346,5 +353,77 @@
 </div>
 </div>
 </section>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 hidden z-50 flex items-center justify-center">
+  
+  <!-- Cerrar -->
+  <button id="closeLightbox" class="absolute top-6 right-6 text-white text-4xl">
+    ✕
+  </button>
+
+  <!-- Anterior -->
+  <button id="prevImg" class="absolute left-6 text-white text-5xl">
+    ‹
+  </button>
+
+  <!-- Imagen -->
+  <img id="lightboxImg" class="max-h-[90vh] max-w-[90vw] object-contain"/>
+
+  <!-- Siguiente -->
+  <button id="nextImg" class="absolute right-6 text-white text-5xl">
+    ›
+  </button>
+</div>
+<script>
+  const images = [...document.querySelectorAll("[data-gallery]")];
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const closeBtn = document.getElementById("closeLightbox");
+  const prevBtn = document.getElementById("prevImg");
+  const nextBtn = document.getElementById("nextImg");
+
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    lightboxImg.src = images[currentIndex].src;
+    lightbox.classList.remove("hidden");
+  }
+
+  function closeLightbox() {
+    lightbox.classList.add("hidden");
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  images.forEach((img, i) => {
+    img.addEventListener("click", () => openLightbox(i));
+  });
+
+  closeBtn.addEventListener("click", closeLightbox);
+  nextBtn.addEventListener("click", showNext);
+  prevBtn.addEventListener("click", showPrev);
+
+  // Cerrar al dar click fuera
+  lightbox.addEventListener("click", e => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Teclado
+  document.addEventListener("keydown", e => {
+    if (lightbox.classList.contains("hidden")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowRight") showNext();
+    if (e.key === "ArrowLeft") showPrev();
+  });
+</script>
 
 </body></html>
