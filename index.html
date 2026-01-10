@@ -60,13 +60,24 @@ tailwind.config = {
 </div>
 </div>
 <div class="md:hidden">
-<button class="text-white p-2">
-<span class="material-icons">menu</span>
+<button id="menuBtn" class="text-white p-2">
+  <span class="material-icons">menu</span>
 </button>
+
 </div>
 </div>
 </div>
 </nav>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden bg-black/95 border-t border-white/10 fixed top-20 left-0 w-full z-40">
+  <div class="px-6 py-6 space-y-4">
+    <a href="#acerca" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Acerca de</a>
+    <a href="#servicios" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Servicios</a>
+    <a href="#galeria" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Galería</a>
+    <a href="#contacto" class="block text-white uppercase tracking-widest font-semibold hover:text-primary">Contacto</a>
+  </div>
+</div>
+
 <section class="relative h-screen flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
 <img alt="Fleet of trucks" class="w-full h-full object-cover" src="images/camionkj.png"/>
@@ -509,6 +520,21 @@ tailwind.config = {
     if (e.key === "Escape") closeLightbox();
     if (e.key === "ArrowRight") showNext();
     if (e.key === "ArrowLeft") showPrev();
+  });
+</script>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  // Cerrar menú al hacer click en un link
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
   });
 </script>
 
