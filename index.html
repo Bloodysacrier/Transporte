@@ -177,89 +177,110 @@ tailwind.config = {
       <div class="w-24 h-1 bg-primary mx-auto mt-6"></div>
     </div>
 
-    <!-- GRID -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- GRID PRINCIPAL -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-stretch">
 
-      <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
-          <img src="images/IngresoAIFA.jpg" data-gallery class="w-full h-full object-cover" alt="">
-        </div>
-        <div class="p-3 text-center">
-          <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
-            Ingreso a Recintos Fiscales AIFA y AICM
-          </h4>
+      <!-- IMAGEN GRANDE IZQUIERDA -->
+      <div class="lg:col-span-2">
+        <div class="lg:min-h-[560px] h-full rounded-lg overflow-hidden shadow-xl">
+          <img 
+            src="images/principal.jpeg"
+            data-gallery class="w-full h-full object-cover"
+            alt="Servicios K&J Logistics"
+            class="w-full h-full object-cover"
+          >
         </div>
       </div>
 
-      <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
-          <img src="images/Transporteespecializado.jpg" data-gallery class="w-full h-full object-cover" alt="">
-        </div>
-        <div class="p-3 text-center">
-          <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
-            Transporte Especializado
-          </h4>
-        </div>
-      </div>
+      <!-- SERVICIOS DERECHA -->
+      <div class="lg:col-span-3 lg:min-h-[560px] h-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 h-full content-start">
 
-      <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
-          <img src="images/fletesloc.jpg" data-gallery class="w-full h-full object-cover" alt="">
-        </div>
-        <div class="p-3 text-center">
-          <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
-            Fletes Locales y Foráneos
-          </h4>
-        </div>
-      </div>
+          <!-- CARD -->
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/IngresoAIFA.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Ingreso a Recintos Fiscales AIFA y AICM
+              </h4>
+            </div>
+          </div>
 
-      <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
-          <img src="images/MANIOBRA_1.jpg" data-gallery class="w-full h-full object-cover" alt="">
-        </div>
-        <div class="p-3 text-center">
-          <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
-            Maniobra
-          </h4>
-        </div>
-      </div>
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/Transporteespecializado.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Transporte Especializado
+              </h4>
+            </div>
+          </div>
 
-      <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
-          <img src="images/EMBALAJE.jpg" data-gallery class="w-full h-full object-cover" alt="">
-        </div>
-        <div class="p-3 text-center">
-          <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
-            Embalaje
-          </h4>
-        </div>
-      </div>
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/fletesloc.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Fletes Locales y Foráneos
+              </h4>
+            </div>
+          </div>
 
-      <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
-          <img src="images/CUSTODIA.jpg" data-gallery class="w-full h-full object-cover" alt="">
-        </div>
-        <div class="p-3 text-center">
-          <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
-            Custodia
-          </h4>
-        </div>
-      </div>
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/MANIOBRA_1.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Maniobra
+              </h4>
+            </div>
+          </div>
 
-      <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
-        <div class="relative w-full h-48 overflow-hidden cursor-pointer">
-          <img src="images/almacenamiento.jpg" data-gallery class="w-full h-full object-cover" alt="">
-        </div>
-        <div class="p-3 text-center">
-          <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
-            Almacenamiento y Resguardo
-          </h4>
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/EMBALAJE.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Embalaje
+              </h4>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/CUSTODIA.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Custodia
+              </h4>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-background-dark shadow-lg overflow-hidden sm:col-span-2">
+            <div class="relative h-40 overflow-hidden">
+              <img src="images/almacenamiento.jpg" data-gallery class="w-full h-full object-cover" class="w-full h-full object-cover">
+            </div>
+            <div class="p-3 text-center">
+              <h4 class="font-display font-semibold uppercase text-xs tracking-wide">
+                Almacenamiento y Resguardo
+              </h4>
+            </div>
+          </div>
+
         </div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
 <section class="py-24 dark:bg-background-dark" id="galeria">
@@ -323,7 +344,24 @@ tailwind.config = {
             <div class="flex-shrink-0 w-12 h-12 bg-primary flex items-center justify-center rounded">
               <span class="material-icons text-white">location_on</span>
             </div>
-            <div class="ml-4"></div>
+            <div class="ml-4">
+              <h4 class="text-lg font-semibold text-gray-900 dark:text-white">
+                Ubicación
+              </h4>
+
+              <a
+                href="https://www.google.com/maps?q=Calle+Educación+Pública+62,+Federal,+Venustiano+Carranza,+15700+Ciudad+de+México"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block text-gray-600 dark:text-gray-300 text-sm leading-relaxed
+         hover:text-blue-600 dark:hover:text-blue-400
+         hover:underline transition-colors"
+              >
+                Calle Educación Pública 62, local 2, Federal,<br>
+                Venustiano Carranza, 15700<br>
+                Ciudad de México
+              </a>
+            </div>
           </div>
 
           <!-- Teléfonos -->
@@ -433,6 +471,22 @@ tailwind.config = {
 
     </div>
   </div>
+  <!-- MAPA -->
+<div class="mt-20">
+  <h4 class="text-center text-2xl font-display font-bold uppercase mb-8 text-slate-900 dark:text-white">
+    Nuestra Ubicación
+  </h4>
+
+  <div class="w-full h-[450px] rounded-lg overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
+    <iframe
+      class="w-full h-full"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Calle%20Educación%20Pública%2062,%20Federal,%20Venustiano%20Carranza,%2015700%20Ciudad%20de%20México&output=embed">
+    </iframe>
+  </div>
+</div>
+
 </section>
 
 <!-- LIGHTBOX -->
