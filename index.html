@@ -426,48 +426,53 @@ tailwind.config = {
       <!-- Formulario -->
       <div class="bg-white dark:bg-background-dark p-8 md:p-10 shadow-xl border border-slate-200 dark:border-slate-800">
         <h4 class="text-2xl font-display font-bold mb-6 uppercase text-slate-900 dark:text-white">
-          Solicitar Cotización
+        Solicitar Cotización
         </h4>
+      <form class="space-y-6" onsubmit="enviarCorreo(event)">
+        <div>
+          <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
+            Nombre Completo
+          </label>
+          <input
+            id="nombre"
+            type="text"
+            required
+            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
+          />
+        </div>
 
-        <form class="space-y-6">
-          <div>
-            <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
-              Nombre Completo
-            </label>
-            <input
-              type="text"
-              class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
-            />
-          </div>
+        <div>
+          <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
+            Correo Electrónico
+          </label>
+          <input
+            id="correo"
+            type="email"
+            required
+            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
+          />
+        </div>
 
-          <div>
-            <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
-              Correo Electrónico
-            </label>
-            <input
-              type="email"
-              class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
-            />
-          </div>
+        <div>
+          <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
+            Mensaje
+          </label>
+          <textarea
+            id="mensaje"
+            rows="4"
+            required
+            class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
+          ></textarea>
+        </div>
 
-          <div>
-            <label class="block text-sm font-bold uppercase tracking-wider mb-2 text-slate-600 dark:text-slate-400">
-              Mensaje
-            </label>
-            <textarea
-              rows="4"
-              class="w-full bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800 focus:ring-primary focus:border-primary px-4 py-3"
-            ></textarea>
-          </div>
+        <button
+          type="submit"
+          class="w-full bg-primary hover:bg-red-700 text-white font-bold py-4 uppercase tracking-widest transition-all"
+        >
+          Enviar Solicitud
+        </button>
+      </form>
 
-          <button
-            type="submit"
-            class="w-full bg-primary hover:bg-red-700 text-white font-bold py-4 uppercase tracking-widest transition-all"
-          >
-            Enviar Solicitud
-          </button>
-        </form>
-      </div>
 
     </div>
   </div>
@@ -591,5 +596,24 @@ tailwind.config = {
     });
   });
 </script>
+
+<script>
+  function enviarCorreo(event) {
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    const destinatario = "ventas@tudominio.com"; // CAMBIA ESTO
+    const asunto = encodeURIComponent("Solicitud de Cotización");
+    const cuerpo = encodeURIComponent(
+      `Nombre: ${nombre}\nCorreo: ${correo}\n\nMensaje:\n${mensaje}`
+    );
+
+    window.location.href = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
+  }
+</script>
+
 
 </body></html>
